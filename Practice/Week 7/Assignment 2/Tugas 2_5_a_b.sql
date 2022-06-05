@@ -1,0 +1,14 @@
+USE COMPANY
+GO
+
+/*5(a) Februari 2000*/
+SELECT *, dbo.hitungGajiHarian(SALARY, 2, 2000) 
+AS DAILY_SALARY
+FROM EMPLOYEE
+		
+/*5(b) Juli 2040*/
+SELECT *, dbo.hitungGajiHarian(SALARY, 7, 2040) 
+AS DAILY_SALARY
+FROM EMPLOYEE
+
+GO
